@@ -1,6 +1,6 @@
 {
   "name": "@tinycreek/postcss-font-magician",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "PostCSS plugin that magically generates all the @font-face rules, with updated packages for security. ",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "contributors": [
