@@ -1,4 +1,6 @@
-# Font Magician [![Build Status][ci-img]][ci]
+# Font Magician (Tiny Creek fork)
+
+###### This fork exists to update numerous dependencies to resolve Dependabot alerts.
 
 <img align="right" width="135" height="95" src="http://postcss.github.io/postcss/logo-leftp.png" title="Philosopher’s stone, logo of PostCSS">
 
