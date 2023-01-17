@@ -7,18 +7,18 @@ const getDirectoryFonts = require('directory-fonts-complete');
 
 // Options
 
-const arrayOptions = [ 'foundries', 'foundriesOrder', 'formats', 'hosted' ];
+const arrayOptions = ['foundries', 'foundriesOrder', 'formats', 'hosted'];
 const defaultOptions = {
     async: false,
     aliases: {},
     variants: {},
     custom: {},
-    foundries: [ 'custom', 'hosted', 'bootstrap', 'google' ],
+    foundries: ['custom', 'hosted', 'bootstrap', 'google'],
     formatHints: {
         otf: 'opentype',
         ttf: 'truetype'
     },
-    formats: [ 'local', 'eot', 'woff2', 'woff' ],
+    formats: ['local', 'eot', 'woff2', 'woff'],
     hosted: [],
     display: '',
     protocol: ''
@@ -26,7 +26,7 @@ const defaultOptions = {
 const initialFoundries = {
     custom: {},
     hosted: {},
-    bootstrap: require('bootstrap-fonts-complete'),
+    bootstrap: require('@tinycreek/bootstrap-fonts-complete'),
     google: require('google-fonts-complete')
 };
 
@@ -77,7 +77,7 @@ const getUnicodeRange = (font, userRange) => {
     if (font.unicodeRange && !isValidUnicodeRange && isUserUnicodeRangeExist) {
         return unicodeRangeList.map(range => font.unicodeRange[range]);
     } else {
-        return [ userRange.toUpperCase() ];
+        return [userRange.toUpperCase()];
     }
 };
 
@@ -96,7 +96,7 @@ const splitValue = value => {
     let splittedValue = value.split(' ');
 
     if (splittedValue.length) {
-        if (!splittedValue[1] || ![ 'normal', 'italic' ].includes(splittedValue[1])) {
+        if (!splittedValue[1] || !['normal', 'italic'].includes(splittedValue[1])) {
             splittedValue.splice(1, 0, 'normal');
         }
 
