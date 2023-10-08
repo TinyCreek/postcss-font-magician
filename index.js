@@ -27,7 +27,7 @@ const initialFoundries = {
     custom: {},
     hosted: {},
     bootstrap: require('@tinycreek/bootstrap-fonts-complete'),
-    google: require('google-fonts-complete')
+    google: require('@tinycreek/google-fonts-complete')
 };
 
 // Helper Methods
